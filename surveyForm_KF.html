@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			html {
+				background: url("https://images.unsplash.com/photo-1517223674839-ffa5aba4f71e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80");
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+
+			}
+			input[type=text], [type=email], [type=number], [type=textarea], select {
+  				width: 50%;
+  				padding: 7px 27x;
+  				margin: 5px;
+  				border: 1px solid #ffffff;
+  				border-radius: 10px;
+  				font-size: 20px;
+  			}
+			#title {
+				margin: 0% 30% 0% 30%;
+				font-size: 30;
+
+			}
+			#description {
+			  text-align: center;
+				padding: 5px;
+				background-width: 40%;
+				margin: 0% 30% 0% 30%;
+			}
+			#topPage{
+				color: #fbddc4;
+				background-color: rgba(68, 31, 0, .5);
+				background-position: center;
+				padding: 20px;
+				background-width: 40%;
+				margin: 0% 30% 0% 30%;
+				position:center;
+				font-style: 'American Typewriter';
+			}
+			#survey-form {
+				background-color: rgba(68, 31, 0, .8);
+				background-position: center;
+				margin: 1% 30% 1% 30%;
+				padding: 10px;
+				background-height: auto;
+				background-width: 40%;
+				color: #fbddc4;
+				font-family: Arial;
+				font-size:20px;
+			}
+			a:link {
+				color: #ffffff;
+				padding: 25px;
+
+			}
+			footer {
+				text-align: center;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="topPage">
+		<h1 id="title"><center>Coffee Preferences Survey</center></h1>
+		<p id="description">We'd love your opinion so we can improve our coffee selection</p>
+	</div>
+		<form id="survey-form">
+			<label id="name-label" for="name">Your name: </label><br>
+			<input id="name" name="name" type="text" placeholder="ex: John Smith" required><br><br>
+			<label id="email-label" for="email">Your Email address: </label><br>
+			<input id="email" type="email" name="email" placeholder="ex: JSmith@email.com" reqiured><br><br>
+			<label id="number-label" for="number">How many cups of coffee do you drink each day (on average)?</label><br>
+			<input id="number" type="number" min="0" max="25" placeholder="ex: 1"><br><br>
+			<label for="dropdown">How do you take your coffee, typically?</label><br>
+			<select id="dropdown">
+				<option disabled selected value>Select...</option>
+				<option value="black">Black (no sugar)</option>
+				<option value="wsugar">Black (with sugar)</option>
+				<option value="wcrm">With cream (no sugar)</option>
+				<option value="wcrm&sgr">With cream and sugar</option>
+			</select>
+			<br>
+			<br>
+			<label for="radioGroup">Where do you drink the most coffee, on the average day?</label><br>
+				<label for="home">At home </label>
+				<input type="radio" id="home"name="radioGroup" value="home"><br>
+				<label for="office">At the office </label>
+				<input type="radio" id="office"name="radioGroup" value="office"><br>
+				<label for="home">During daily commute </label>
+				<input type="radio" id="commute"name="radioGroup" value="commute"><br>
+				<label for="home">At a coffee shop</label>
+				<input type="radio" id="coffeeShop"name="radioGroup" value="coffeeShop"><br><br>
+
+				<fieldset>
+					<legend>What method(s) do you use to make your coffee?</legend>
+						<input type="checkbox" name="method" value="drip" checked>Using a drip-style machine<br>
+						<input type="checkbox" name="method" value="press">Using a French Press<br>
+						<input type="checkbox" name="method" value="Chemex">Using a Chemex<br>
+						<input type="checkbox" name="method" value="idk">I buy it/don't know<br>
+				</fieldset>
+
+				<label for="comments">Anything else we should know? </label>
+      			<textarea id="comments"></textarea>
+				<br>
+				<label for="submit">Submit your answers: </label>
+					<input id="submit" type="submit"><br><br>
+
+		</form>
+	</body>
+
+
+	<footer>
+			<a href="#">About Us</a>
+			<a href="#">Legal Notices</a>
+			<a href="#">Data Usage Notice</a>
+	</footer>
+</html>
